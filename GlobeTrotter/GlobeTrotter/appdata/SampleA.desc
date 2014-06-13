@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TripSummary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TripName>744517165</TripName>
+  <Id>744517165</Id>
+  <FolderTopName>Sample</FolderTopName>
+  <LocationMain>Australia</LocationMain>
+  <LocationFromTo>Litchfield Park to Margaret River</LocationFromTo>
+  <DateArrival>2013-04-07T03:33:53</DateArrival>
+    <DateDeparture>2013-08-11T03:37:36</DateDeparture>
+    <Distance>1563</Distance>
+    <PathThumb>744517165</PathThumb>
+  <PicturesThumb>
+      <string>1021326749.jpg</string>
+      <string>1837076975.jpg</string>
+      <string>1848291921.jpg</string>
+      <string>1876716837.jpg</string>
+  </PicturesThumb>
+  <Sample>true</Sample>
+  <SampleId>1</SampleId>
+  <Countries>
+    <string>AUSTRALIA</string>
+  </Countries>
+</TripSummary>

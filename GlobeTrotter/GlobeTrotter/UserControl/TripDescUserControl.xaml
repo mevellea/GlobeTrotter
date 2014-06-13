@@ -1,0 +1,82 @@
+﻿<UserControl
+    x:Class="GlobeTrotter.TripDescUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GlobeTrotter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    KeyDown="pageRoot_KeyDown"
+    d:DesignWidth="260"
+    d:DesignHeight="449">
+
+    <Grid>
+        <StackPanel x:Name="StackPanelMain" HorizontalAlignment="Left" Background="#FF2E2160" Tapped="StackPanelMain_Tapped" Width="260">
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" Height="449">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="130"/>
+                    <RowDefinition Height="130"/>
+                    <RowDefinition Height="55"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="33"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="130"/>
+                    <ColumnDefinition Width="130"/>
+                </Grid.ColumnDefinitions>
+                <Image x:Name="pic_single" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="0" Grid.Row="0" Margin="0"/>
+                <Image x:Name="pic0" Source="ms-appx:///Icons/car.png" Grid.Column="0" Grid.Row="0" Margin="0,0,0,0"/>
+                <Image x:Name="pic1" Source="ms-appx:///Icons/car_white.png" Grid.Column="0" Grid.Row="1" Margin="0,0,0,0"/>
+                <Image x:Name="pic2" Source="ms-appx:///Icons/ferry.png" Grid.Column="1" Grid.Row="0" Margin="0,0,0,0"/>
+                <Image x:Name="pic3" Source="ms-appx:///Icons/ferry_white.png" Grid.Column="1" Grid.Row="1" Margin="0,0,0,0"/>
+
+                <ProgressRing x:Name="loadRing" Grid.Row="6" Grid.Column="1"
+                           Width="28" Margin="0,0,15,0"
+                           VerticalAlignment="top" HorizontalAlignment="Right" Foreground="#FF76D31A" Height="28"/>
+                <TextBlock x:Name="textMain" Text="Country" Grid.Row="2"
+            	           Foreground="#FFE01D1D" Grid.ColumnSpan="2"
+            	           HorizontalAlignment="Left" 
+            	           VerticalAlignment="Bottom" 
+                           FontFamily="Global User Interface" 
+                           FontWeight="Bold" FontSize="22" Margin="15,0,0,9" Width="235" Height="26"/>
+                <TextBlock x:Name="textFromTo" Text="City"
+                           Foreground="Orange" Grid.Row="3" Grid.ColumnSpan="2"
+            	           HorizontalAlignment="Left" Margin="25,0,0,0" 
+            	           VerticalAlignment="Bottom" 
+                           FontFamily="Global User Interface" 
+                           FontWeight="Bold" FontSize="14" Width="227" Height="21"/>
+                <TextBlock x:Name="Datefrom" Text="Date from"
+                           Foreground="White" Grid.Row="4" Grid.ColumnSpan="2"
+            	           HorizontalAlignment="center" Margin="33,0,8,0" 
+            	           VerticalAlignment="Bottom" 
+                           FontFamily="Global User Interface" 
+                           FontWeight="SemiBold" FontSize="12" Width="219" Height="21"/>
+                <TextBlock x:Name="Distance" Text="Distance" Grid.Row="5" Grid.ColumnSpan="2"
+            	           HorizontalAlignment="center" Margin="33,0,8,6" 
+            	           VerticalAlignment="Center" 
+                           FontFamily="Global User Interface" 
+                           FontWeight="SemiBold" FontSize="12" Width="219" Height="21" Foreground="White"/>
+
+                <Image x:Name="pic_sync1" Source="ms-appx:///Icons/USB-Drive-icon.png" VerticalAlignment="Top" Tapped="pic_sync1_Tapped"
+                       Grid.Column="0" Grid.Row="6" Margin="20,2,0,2" HorizontalAlignment="Left" Width="26" Height="26"/>
+                <Image x:Name="pic_sync2" Source="ms-appx:///Icons/Dropbox.png" VerticalAlignment="Top" Tapped="pic_sync2_Tapped"
+                       Grid.Column="0" Grid.Row="6" Margin="60,2,0,2" HorizontalAlignment="Left" Width="26" Height="26"/>
+                <Image x:Name="pic_sync3" Source="ms-appx:///Icons/Settings.png" VerticalAlignment="Top" Tapped="pic_sync3_Tapped"
+                       Grid.Column="0" Grid.Row="6" Margin="100,2,0,0" HorizontalAlignment="Left" Width="26" Height="26" Visibility="Visible"/>
+                <Image x:Name="pic_sync4" Source="ms-appx:///Icons/Facebook.png" VerticalAlignment="Top" Tapped="pic_sync4_Tapped"
+                       Grid.Column="1" Grid.Row="6" Margin="14,4,0,0" HorizontalAlignment="Left" Width="19" Height="19" Visibility="Collapsed"/>
+                
+                <Rectangle x:Name="rect_Sync1" Grid.Column="0" Grid.Row="6" Width="5" Height="5" VerticalAlignment="Top" HorizontalAlignment="Left"
+                            Margin="25,6,20,2" Fill="Red" Visibility="Collapsed"/>
+                <Rectangle x:Name="rect_Sync2" Grid.Column="0" Grid.Row="6" Width="5" Height="5" VerticalAlignment="Top" HorizontalAlignment="Left"
+                            Margin="65,6,20,2" Fill="Red" Visibility="Collapsed"/>
+                <Rectangle x:Name="rect_Sync3" Grid.Column="0" Grid.Row="6" Width="5" Height="5" VerticalAlignment="Top" HorizontalAlignment="Left"
+                            Margin="105,6,20,2" Fill="Red" Visibility="Collapsed"/>
+                <Rectangle x:Name="rect_Sync4" Grid.Column="1" Grid.Row="6" Width="5" Height="5" VerticalAlignment="Top" HorizontalAlignment="Left"
+                            Margin="17,6,20,2" Fill="Red" Visibility="Collapsed"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</UserControl>

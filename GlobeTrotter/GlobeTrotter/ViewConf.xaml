@@ -1,0 +1,117 @@
+﻿<Page
+    x:Name="pageRoot"
+    x:Class="GlobeTrotter.ViewConf"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GlobeTrotter"
+    xmlns:common="using:GlobeTrotter.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <ItemsPanelTemplate x:Key="StoreFrontGridItemsPanelTemplate">
+            <WrapGrid MaximumRowsOrColumns="5" VerticalChildrenAlignment="Top" Orientation="Vertical"
+					  HorizontalChildrenAlignment="Left" Margin="0,0,0,0"/>
+        </ItemsPanelTemplate>
+
+        <Style x:Key="StoreFrontTileStyle" TargetType="GridViewItem">
+            <Setter Property="FontFamily" Value="Segoe UI" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="Margin" Value="10,0,0,0" />
+            <Setter Property="HorizontalContentAlignment" Value="Left" />
+            <Setter Property="VerticalContentAlignment" Value="Top" />
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="TabNavigation" Value="Local" />
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="140"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="200*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="backButton" Margin="39,59,39,0" TabIndex="0"
+                    Style="{StaticResource NavigationBackButtonNormalStyle}"
+                    VerticalAlignment="Top" Click="backButton_Click"
+                    AutomationProperties.Name="Back"
+                    AutomationProperties.AutomationId="BackButton"
+                    AutomationProperties.ItemType="Navigation Button"/>
+            <TextBlock x:Name="pageTitle" Text="Trip configuration" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
+
+            <ListView x:Name="tableAlbums" Grid.Row="1" Margin="0,28,0,75" TabIndex="1"
+                    BorderBrush="Gray" VerticalAlignment="Stretch" HorizontalAlignment="Left" Width="385" Loaded="tableAlbums_Loaded"
+                    ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" 
+                      RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Grid.Column="1" >
+                <ListView.RenderTransform>
+                    <CompositeTransform SkewX="0.293" TranslateX="1.995"/>
+                </ListView.RenderTransform>
+            </ListView>
+
+            <TextBox x:Name="TripPath" Grid.Column="1" HorizontalAlignment="Left" Margin="566,64,0,0" Foreground="White" TabIndex="2"
+                     Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Background="{x:Null}" 
+                     BorderBrush="{x:Null}" FontSize="20" IsReadOnly="True"/>
+            <TextBlock x:Name="lblPath" Grid.Column="1" HorizontalAlignment="Left" Margin="466,72,0,0" Grid.Row="1" 
+                       TextWrapping="Wrap" Text="Path:" VerticalAlignment="Top" FontSize="20"/>
+
+            <TextBox x:Name="TripName" Grid.Column="1" Margin="566,216,0,0" Foreground="White"
+                     IsSpellCheckEnabled="True" IsTextPredictionEnabled="True" TabIndex="5"
+                     Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Background="{x:Null}" 
+                     BorderBrush="White" FontSize="20" HorizontalAlignment="Left" Width="300"/>
+            <TextBlock x:Name="lblPicNum" Grid.Column="1" HorizontalAlignment="Left" Margin="466,121,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Pictures:" VerticalAlignment="Top" FontSize="20"/>
+
+            <TextBox x:Name="AlbumNum" Grid.Column="1" HorizontalAlignment="Left" Margin="566,163,0,0" Foreground="White" TabIndex="4"
+                     Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Background="{x:Null}" 
+                     BorderBrush="{x:Null}" FontSize="20" IsReadOnly="True"/>
+            <TextBlock x:Name="lblAlbNum" Grid.Column="1" HorizontalAlignment="Left" Margin="466,171,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Albums:" VerticalAlignment="Top" FontSize="20"/>
+
+            <TextBox x:Name="PicNum" Grid.Column="1" HorizontalAlignment="Left" Margin="566,113,0,0" Foreground="White" TabIndex="3"
+                     Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Background="{x:Null}" 
+                     BorderBrush="{x:Null}" FontSize="20" IsReadOnly="True"/>
+            <TextBlock x:Name="lblName" Grid.Column="1" HorizontalAlignment="Left" Margin="466,226,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top" FontSize="20"/>
+            <CheckBox x:Name="ChkRename" Content="Rename files and folders" Grid.Column="1" Checked="ChkRename_Checked" Unchecked="ChkRename_Checked"
+                      HorizontalAlignment="Left" Margin="468,345,0,0" Grid.Row="1" VerticalAlignment="Top"  TabIndex="7"/>
+
+            <CheckBox x:Name="ChkDropbox" Content="Synchronize with Dropbox" Grid.Column="1" Checked="ChkDropbox_Checked" Unchecked="ChkDropbox_Checked"
+                      HorizontalAlignment="Left" Margin="468,396,0,0" Grid.Row="1" VerticalAlignment="Top"  TabIndex="8"/>
+            <ComboBox x:Name="ComboDropbox" Grid.Column="1" HorizontalAlignment="Left" Margin="720,393,0,0"  TabIndex="9"
+                      Grid.Row="1" VerticalAlignment="Top" Width="240" SelectionChanged="ComboDropbox_SelectionChanged"/>
+
+            <CheckBox x:Name="ChkUsb" Content="Synchronize with Usb" Grid.Column="1" Checked="ChkUsb_Checked" Unchecked="ChkUsb_Checked"
+                      HorizontalAlignment="Left" Margin="468,447,0,0" Grid.Row="1" VerticalAlignment="Top" TabIndex="10"/>
+            <ComboBox x:Name="ComboUsb" Grid.Column="1" HorizontalAlignment="Left" Margin="720,444,0,0"  TabIndex="11"
+                      Grid.Row="1" VerticalAlignment="Top" Width="240" SelectionChanged="ComboUsb_SelectionChanged"/>
+
+            <Button x:Name="btnUpdate" Content="Update" Grid.Column="1" HorizontalAlignment="Left" Margin="482,508,0,0" Grid.Row="1" VerticalAlignment="Top" 
+                    IsEnabled="True" Click="Button_Click" TabIndex="12"/>
+            <ProgressRing x:Name="ringImport" Height="47" Foreground="White" Margin="35,0,0,11" Grid.Row="2" 
+                     HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="52" Visibility="Visible"/>
+            <TextBlock x:Name="txtImport" TextWrapping="NoWrap" Text="Importation" TextAlignment="Center"
+                     Foreground="White" VerticalAlignment="Bottom"                     
+                     Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Height="30"
+                     Visibility="Collapsed" Margin="268,0,268,20" FontSize="12"/>
+            <ProgressBar x:Name="progressBar" Background="White" Visibility="Collapsed" 
+                     Foreground="Gray" CharacterSpacing="1" Margin="181,0,181,19" VerticalAlignment="Bottom" 
+                     Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="0" Grid.RowSpan="1"
+                     Height="6"/>
+            <TextBox x:Name="TripLocation" Grid.Column="1" Margin="566,272,0,0" Foreground="White"
+            	     IsSpellCheckEnabled="True" IsTextPredictionEnabled="True" TabIndex="6"
+            	     Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Background="{x:Null}" 
+                     BorderBrush="White" FontSize="20" HorizontalAlignment="Left" Width="300"/>
+            <TextBlock x:Name="lblLocation" Grid.Column="1" HorizontalAlignment="Left" Margin="466,282,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Location:" VerticalAlignment="Top" FontSize="20"/>
+        </Grid>
+    </Grid>
+</Page>

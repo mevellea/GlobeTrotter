@@ -1,0 +1,641 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddSec" xml:space="preserve">
+    <value>Add a sec.</value>
+  </data>
+  <data name="Camera" xml:space="preserve">
+    <value>Camera</value>
+  </data>
+  <data name="Creating" xml:space="preserve">
+    <value>Creating</value>
+  </data>
+  <data name="CreatingThumb" xml:space="preserve">
+    <value>Creating thumbnails</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DownloadingItinerary" xml:space="preserve">
+    <value>Downloading itinerary</value>
+  </data>
+  <data name="ImportPicture" xml:space="preserve">
+    <value>Importing picture</value>
+  </data>
+  <data name="ImportStart" xml:space="preserve">
+    <value>Start import...</value>
+  </data>
+  <data name="ImportSucceeded" xml:space="preserve">
+    <value>Import succeded!</value>
+  </data>
+  <data name="ImportSwipe" xml:space="preserve">
+    <value>To import your first trip, right click or swipe bottom of the screen.</value>
+  </data>
+  <data name="Of" xml:space="preserve">
+    <value>of</value>
+  </data>
+  <data name="SelectFolder" xml:space="preserve">
+    <value>Select folder</value>
+  </data>
+  <data name="PicturesImported" xml:space="preserve">
+    <value>pictures imported</value>
+  </data>
+  <data name="Points" xml:space="preserve">
+    <value>Points</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="RemSec" xml:space="preserve">
+    <value>Remove a sec.</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SearchLocation" xml:space="preserve">
+    <value>Search a location...</value>
+  </data>
+  <data name="Seconds" xml:space="preserve">
+    <value>seconds</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="ImportFinished" xml:space="preserve">
+    <value>Import finished!</value>
+  </data>
+  <data name="Relocation" xml:space="preserve">
+    <value>To define GPS location, drag and drop on the map</value>
+  </data>
+  <data name="UnknownLocation" xml:space="preserve">
+    <value>Some albums are not located</value>
+  </data>
+  <data name="ViewMap" xml:space="preserve">
+    <value>View on map</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="AddTrip" xml:space="preserve">
+    <value>Add a trip</value>
+  </data>
+  <data name="ClearTrip" xml:space="preserve">
+    <value>Clear all trips</value>
+  </data>
+  <data name="SearchPictures" xml:space="preserve">
+    <value>Searching pictures...</value>
+  </data>
+  <data name="DeleteTrip" xml:space="preserve">
+    <value>Delete a trip</value>
+  </data>
+  <data name="DeleteTripInfo" xml:space="preserve">
+    <value>To delete a trip, drag and drop into the trash</value>
+  </data>
+  <data name="DeleteNo" xml:space="preserve">
+    <value>Don't delete</value>
+  </data>
+  <data name="DeleteYes" xml:space="preserve">
+    <value>Delete all</value>
+  </data>
+  <data name="WarningDeleteMsg" xml:space="preserve">
+    <value>You are going to delete all your trips and your progression</value>
+  </data>
+  <data name="Diaporama" xml:space="preserve">
+    <value>Slideshow</value>
+  </data>
+  <data name="DiaporamaEnabled" xml:space="preserve">
+    <value>Slideshow is not enabled.</value>
+  </data>
+  <data name="DiaporamaStart" xml:space="preserve">
+    <value>To start slideshow, swipe down bottom of screen and select play.</value>
+  </data>
+  <data name="FullScreenMode" xml:space="preserve">
+    <value>Full screen mode</value>
+  </data>
+  <data name="NavigateArrows" xml:space="preserve">
+    <value>To navigate between pictures, use left and right arrows.</value>
+  </data>
+  <data name="SampleMode" xml:space="preserve">
+    <value>Sample mode</value>
+  </data>
+  <data name="Sample" xml:space="preserve">
+    <value>Sample</value>
+  </data>
+  <data name="Pause" xml:space="preserve">
+    <value>Pause</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>Play</value>
+  </data>
+  <data name="Awesome" xml:space="preserve">
+    <value>Awesome!</value>
+  </data>
+  <data name="ItemUnlocked" xml:space="preserve">
+    <value>New item unlocked!</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Feedback</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>Don't hesitate to send me a feedback, a bug report or a suggestion of evolution at my email address</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Feedback and bug report</value>
+  </data>
+  <data name="SampleRemoved" xml:space="preserve">
+    <value>Sample trips have been removed</value>
+  </data>
+  <data name="Albums" xml:space="preserve">
+    <value>albums</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="ImportLater" xml:space="preserve">
+    <value>Import later</value>
+  </data>
+  <data name="MultipleDescription" xml:space="preserve">
+    <value>Your selection contains several sub-folders. The import tool can create one album per sub-folder, or one album per day of your trip. 
+ 
+If your sub-folders are not organized by event or date, you can also cancel so as to reorganize your sub-folders, and import later.</value>
+  </data>
+  <data name="FirstImport" xml:space="preserve">
+    <value>First successful import!</value>
+  </data>
+  <data name="NoPicture" xml:space="preserve">
+    <value>No picture found</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="ImportInformation" xml:space="preserve">
+    <value>Import tool is going to create one album per sub-folder.</value>
+  </data>
+  <data name="ImportByDate" xml:space="preserve">
+    <value>Create one album per day</value>
+  </data>
+  <data name="ImportByFolder" xml:space="preserve">
+    <value>Create one album per sub-folder</value>
+  </data>
+  <data name="ImportSingle" xml:space="preserve">
+    <value>Create one single album</value>
+  </data>
+  <data name="SingleDescription" xml:space="preserve">
+    <value>Your selection contains one single folder. The import tool can create one single album, or one album per day of your trip.
+
+If you want to take profit of the event localization, you can also cancel and create sub-folders for each event or place you visited. During your next import, the app will create one album per sub-folder.</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning!</value>
+  </data>
+  <data name="Thanks" xml:space="preserve">
+    <value>Thanks for using GlobeTrotter!</value>
+  </data>
+  <data name="Understood" xml:space="preserve">
+    <value>Understood!</value>
+  </data>
+  <data name="Upgrade" xml:space="preserve">
+    <value>Upgrade</value>
+  </data>
+  <data name="Why" xml:space="preserve">
+    <value>Why?</value>
+  </data>
+  <data name="VersionBasic" xml:space="preserve">
+    <value>Your are using the basic version. You can't import more than 2 trips.
+
+For a better experience, consider switching to the full version!</value>
+  </data>
+  <data name="Reinitialize" xml:space="preserve">
+    <value>Reinitialize all</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="GoOffline" xml:space="preserve">
+    <value>Go offline</value>
+  </data>
+  <data name="LimitReached" xml:space="preserve">
+    <value>Download quota reached</value>
+  </data>
+  <data name="UpgradeOrWaitTomorrow" xml:space="preserve">
+    <value>Your have downloaded the maximum number of itineraries and places for today, please upgrade or wait until tomorrow!</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="LimitedConnection" xml:space="preserve">
+    <value>Your mobile connection is metered. This application is going to download data from the Internet, which might results in additional costs.
+
+If you don't want to see this message again, uncheck 'Display warnings' in settings panel</value>
+  </data>
+  <data name="ConfigUnits" xml:space="preserve">
+    <value>Display distances in 'miles' instead of 'km'</value>
+  </data>
+  <data name="ConfigWarnings" xml:space="preserve">
+    <value>Display a message when download 
+quota is almost reached</value>
+  </data>
+  <data name="ConfigDownload" xml:space="preserve">
+    <value>Downloading places and itineraries 
+can generate significant amount of data</value>
+  </data>
+  <data name="SwitchWarnings" xml:space="preserve">
+    <value>Display warnings</value>
+  </data>
+  <data name="HomeRegion" xml:space="preserve">
+    <value>Home country</value>
+  </data>
+  <data name="UpgradeNotAvailable" xml:space="preserve">
+    <value>Full version is not available on the store at the moment. Sorry for this.</value>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>GlobeTrotter</value>
+  </data>
+  <data name="DragDropEnabled" xml:space="preserve">
+    <value>Drag &amp; drop is not enabled</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="ConfigDownloadTitle" xml:space="preserve">
+    <value>Download from Internet</value>
+  </data>
+  <data name="ConfigMetadata" xml:space="preserve">
+    <value>When the location of a picture
+is defined, the GPS metadata field of the 
+source file in 'My pictures' is updated</value>
+  </data>
+  <data name="ConfigMetadataTitle" xml:space="preserve">
+    <value>Update metadata</value>
+  </data>
+  <data name="ConfigUnitsTitle" xml:space="preserve">
+    <value>Metric system</value>
+  </data>
+  <data name="ConfigWarningsTitle" xml:space="preserve">
+    <value>Display warnings</value>
+  </data>
+  <data name="CountriesVisited" xml:space="preserve">
+    <value>countries visited</value>
+  </data>
+  <data name="ReviewDefinition" xml:space="preserve">
+    <value>Review pictures of your last trip</value>
+  </data>
+  <data name="TrialDescription" xml:space="preserve">
+    <value>This version is limited to 2 trips only. You must upgrade to full version to get access to all features.</value>
+  </data>
+  <data name="TrialVersion" xml:space="preserve">
+    <value>Trial version</value>
+  </data>
+  <data name="VersionFull" xml:space="preserve">
+    <value>Your are using the full version. You can import unlimited number of trips.</value>
+  </data>
+  <data name="ThanksPurchase" xml:space="preserve">
+    <value>Thanks for your purchase!</value>
+  </data>
+  <data name="ImportCamera" xml:space="preserve">
+    <value>From camera</value>
+  </data>
+  <data name="NoCamera" xml:space="preserve">
+    <value>No device was found on this computer</value>
+  </data>
+  <data name="ImportFirst" xml:space="preserve">
+    <value>Import all pictures?</value>
+  </data>
+  <data name="ImportSince" xml:space="preserve">
+    <value>Import all pictures since previous import on </value>
+  </data>
+  <data name="PrivacyStatement" xml:space="preserve">
+    <value>View privacy statement</value>
+  </data>
+  <data name="ConfigRename" xml:space="preserve">
+    <value>Update files and folders according to 
+albums name</value>
+  </data>
+  <data name="ConfigRenameTitle" xml:space="preserve">
+    <value>Organize and rename automatically</value>
+  </data>
+  <data name="AutomaticRename" xml:space="preserve">
+    <value>Rename source files?</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="RenameQuestion" xml:space="preserve">
+    <value>Do you want to let the application organize and rename pictures?
+
+You can turn off or turn on this message in the Control Panel.</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="NotNow" xml:space="preserve">
+    <value>Not now</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="Always" xml:space="preserve">
+    <value>Always</value>
+  </data>
+  <data name="Ask" xml:space="preserve">
+    <value>Ask</value>
+  </data>
+  <data name="Never" xml:space="preserve">
+    <value>Never</value>
+  </data>
+  <data name="NoChoose" xml:space="preserve">
+    <value>No, let me choose</value>
+  </data>
+  <data name="NoNewImage" xml:space="preserve">
+    <value>No new image was found on this device.</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="Album" xml:space="preserve">
+    <value>album</value>
+  </data>
+  <data name="MergeTrips" xml:space="preserve">
+    <value>Merge these 2 trips?</value>
+  </data>
+  <data name="MergeSamples" xml:space="preserve">
+    <value>You can't merge sample trips</value>
+  </data>
+  <data name="ConnectionInformation" xml:space="preserve">
+    <value>You must be connected to create a new trip</value>
+  </data>
+  <data name="NoConnection" xml:space="preserve">
+    <value>No Internet connection</value>
+  </data>
+  <data name="CreatingOf" xml:space="preserve">
+    <value>Creating</value>
+  </data>
+  <data name="DownloadPosition" xml:space="preserve">
+    <value>Downloading position</value>
+  </data>
+  <data name="Found" xml:space="preserve">
+    <value>Found</value>
+  </data>
+  <data name="ImagesFound" xml:space="preserve">
+    <value>pictures found</value>
+  </data>
+  <data name="Reorganize" xml:space="preserve">
+    <value>Reorganise folder</value>
+  </data>
+  <data name="MergeAlbums" xml:space="preserve">
+    <value>Merge these 2 albums?</value>
+  </data>
+  <data name="ConfigPerfo" xml:space="preserve">
+    <value>Reduce the number of elements to be
+displayed on map, activate if your 
+computer has low-perf processor/RAM</value>
+  </data>
+  <data name="ConfigPerfoTitle" xml:space="preserve">
+    <value>Low performances</value>
+  </data>
+  <data name="Accounts" xml:space="preserve">
+    <value>Accounts</value>
+  </data>
+  <data name="LoginDescription" xml:space="preserve">
+    <value>Login to one of these providers if you want to synchronize your trips and pictures.</value>
+  </data>
+  <data name="MovePicture" xml:space="preserve">
+    <value>Moving picture</value>
+  </data>
+  <data name="Merging" xml:space="preserve">
+    <value>Merging trips...</value>
+  </data>
+  <data name="SynchroAlbum" xml:space="preserve">
+    <value>Synchronize album</value>
+  </data>
+  <data name="SynchroStart" xml:space="preserve">
+    <value>Synchronization with server started</value>
+  </data>
+  <data name="SynchroTrip" xml:space="preserve">
+    <value>Synchronize trip</value>
+  </data>
+  <data name="DeleteCloud" xml:space="preserve">
+    <value>Do you want to delete all the online content as well?</value>
+  </data>
+  <data name="DeleteCloudFailed" xml:space="preserve">
+    <value>GlobeTrotter was unable to delete the online content. You can delete it manually later.</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="CompressionChooseLevel" xml:space="preserve">
+    <value>Choose desired compression level:</value>
+  </data>
+  <data name="CompressionHigh" xml:space="preserve">
+    <value>High (1024x768)</value>
+  </data>
+  <data name="CompressionMedium" xml:space="preserve">
+    <value>Medium (1920x1080)</value>
+  </data>
+  <data name="CompressionNo" xml:space="preserve">
+    <value>No compression (original)</value>
+  </data>
+  <data name="SynchroWith" xml:space="preserve">
+    <value>Synchronization with</value>
+  </data>
+  <data name="CodeAuthField" xml:space="preserve">
+    <value>Paste your Dropbox authorization code here</value>
+  </data>
+  <data name="DescField1" xml:space="preserve">
+    <value>Dropbox needs an authorization code from your default browser, for security reasons.</value>
+  </data>
+  <data name="DescField2" xml:space="preserve">
+    <value>If it is the first time you see this message, click "Request new code" and copy the final code.</value>
+  </data>
+  <data name="RequestText" xml:space="preserve">
+    <value>Request new code</value>
+  </data>
+  <data name="Guest" xml:space="preserve">
+    <value>Guest</value>
+  </data>
+  <data name="Synchro" xml:space="preserve">
+    <value>Synchronization</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Ignore</value>
+  </data>
+  <data name="LeaveWithoutUpdate" xml:space="preserve">
+    <value>Your modifications were not saved</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="ConfAskDropbox" xml:space="preserve">
+    <value>Synchronize with Dropbox</value>
+  </data>
+  <data name="ConfAskRename" xml:space="preserve">
+    <value>Rename files and folders</value>
+  </data>
+  <data name="ConfAskUsb" xml:space="preserve">
+    <value>Synchronize with Usb</value>
+  </data>
+  <data name="ConfLblAlbNum" xml:space="preserve">
+    <value>Albums:</value>
+  </data>
+  <data name="ConfLblName" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="ConfLblPath" xml:space="preserve">
+    <value>Path:</value>
+  </data>
+  <data name="ConfLblPicNum" xml:space="preserve">
+    <value>Pictures:</value>
+  </data>
+  <data name="ConfTitle" xml:space="preserve">
+    <value>Trip configuration</value>
+  </data>
+  <data name="LocationDefined" xml:space="preserve">
+    <value>Location is defined</value>
+  </data>
+  <data name="ConfLblLocation" xml:space="preserve">
+    <value>Location:</value>
+  </data>
+  <data name="NoSampleModification" xml:space="preserve">
+    <value>You can't modify this trip</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="SyncFailRestartLater" xml:space="preserve">
+    <value>Synchronisation failed. Please restart later.</value>
+  </data>
+  <data name="AppDescription" xml:space="preserve">
+    <value>Organize and review your last trip</value>
+  </data>
+  <data name="ImportForbidden" xml:space="preserve">
+    <value>You are not allowed to import from this folder.</value>
+  </data>
+</root>

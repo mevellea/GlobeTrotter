@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TripSummary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TripName>1852188276</TripName>
+  <Id>1852188276</Id>
+  <FolderTopName>Sample</FolderTopName>
+  <LocationMain>Indonesia</LocationMain>
+  <LocationFromTo>Gianyar to Banyuwangi</LocationFromTo>
+  <DateArrival>2013-07-11T12:41:26</DateArrival>
+  <DateDeparture>2013-07-25T15:09:49</DateDeparture>
+  <Distance>283</Distance>
+    <PathThumb>1852188276</PathThumb>
+  <PicturesThumb>
+      <string>498338580.jpg</string>
+      <string>1005799797.jpg</string>
+      <string>483813893.jpg</string>
+      <string>113772400.jpg</string>
+  </PicturesThumb>
+  <Sample>true</Sample>
+  <SampleId>2</SampleId>
+  <Countries>
+    <string>INDONESIA</string>
+  </Countries>
+</TripSummary>
